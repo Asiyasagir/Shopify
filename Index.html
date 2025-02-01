@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Product Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <h1>Digital Store</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="fas fa-moon"></button></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Welcome to Our Digital Store</h2>
+        <p>High-quality digital products for your needs.</p>
+    </section>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$10.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$15.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Information about the digital store and its mission.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items"></div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+    <button id="chat-button" class="fas fa-comments"></button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
